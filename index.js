@@ -17,8 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
-
+// The function nestedFunction() is capable of accessing the variable internal because nestedFunction()
+// is delcared inside of the myFunction, where internal is also declared. In short, they share they same scope
 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
@@ -28,9 +28,13 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let returnVal = 0;
+  while (num > 0) {
+    returnVal += num;
+    num--;
+  }
+  return returnVal;
   }
  
 
