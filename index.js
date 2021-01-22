@@ -60,8 +60,12 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    let displayNames = [];
+    array.forEach(function(obj) {
+      displayNames.push(`name: ${obj.animal_name}, scientific: ${obj.scientific_name}`);
+    })
+    return displayNames;
   }
   
 
